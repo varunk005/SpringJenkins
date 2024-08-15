@@ -11,10 +11,10 @@ import jakarta.annotation.PostConstruct;
 public class SpringJenkinsApplication {
 
 	
-	Logger logger =LoggerFactory.getLogger(SpringJenkinsApplication.class);
+	public static Logger logger =LoggerFactory.getLogger(SpringJenkinsApplication.class);
 	
 	@PostConstruct
-	public void init(String msg) {
+	public void init() {
 		logger.info("Application started...");
 	}
 	
